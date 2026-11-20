@@ -1,354 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jhoanna Zamora — Portfolio</title>
-    <meta name="description" content="Portfolio and resume website for Jhoanna Zamora." />
-    <!-- SEO meta tags -->
-    <meta name="keywords"
-        content="Jhoanna Zamora, hospitality professional, bakery production, administrative operations, customer service, resume, portfolio" />
-    <!-- Open Graph tags for better social sharing -->
-    <meta property="og:title" content="Jhoanna Zamora — Hospitality, Bakery &amp; Operations Professional" />
-    <meta property="og:description"
-        content="Dynamic professional with over 4 years of experience in customer service, bakery production, and administrative operations. Explore my portfolio and resume." />
-    <meta property="og:image" content="profile.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="#" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fcf4f8">
+    <title>Jhoanna Zamora — Hospitality, Bakery &amp; Operations</title>
+    <meta name="description" content="Jhoanna Zamora’s portfolio of hospitality management, bakery production, and administrative operations.">
+    <meta property="og:title" content="Jhoanna Zamora — Hospitality, Bakery &amp; Operations">
+    <meta property="og:description" content="Explore Jhoanna’s work in hospitality and bakery operations, professional experience, and food gallery.">
+    <meta property="og:image" content="assets/images/profile.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 
-<body>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-        <a class="brand" href="#">
-            <span class="logo">JZ</span>
-            <span class="brand-text">Jhoanna Zamora</span>
-        </a>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
-            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-        </button>
-        <nav class="site-nav" aria-label="Primary">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#certs">Certificates</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact" class="btn btn--small">Contact</a>
-        </nav>
+        <div class="container header-inner">
+            <a class="brand" href="#top">
+                <span class="monogram" aria-hidden="true">JZ</span>
+                <span>Jhoanna Zamora</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button>
+            <nav id="primary-nav" class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#certs">Certificates</a>
+                <a href="#gallery">Gallery</a>
+                <a class="button button--small" href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="bg-doodles" aria-hidden="true"></div>
-            <div class="hero__content container">
-                <div class="hero__left">
-                    <h1>
-                        <span class="overline">Hospitality • Bakery • Ops</span>
-                        <span class="headline">Warm service, pretty plating, and polished operations.</span>
+    <main id="main" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">Hospitality · Bakery · Operations</p>
+                    <h1 id="hero-title">
+                        <span>Warm service,</span>
+                        <em>pretty plating,</em>
+                        <span>polished operations.</span>
                     </h1>
-                    <p class="lede">
-                        Dynamic professional with 4+ years in customer service, bakery production, and administrative
-                        operations.
-                        Bilingual in English and Tagalog.
-                    </p>
-                    <div class="hero__cta">
-                        <a href="#contact" class="btn">Work with me</a>
-                        <a href="#experience" class="btn btn--ghost">See my experience</a>
+                    <p class="hero-lede">I’m Jhoanna, an Assistant Manager with over four years of experience across customer service, bakery production, administrative operations, and team leadership.</p>
+                    <div class="button-row">
+                        <a class="button" href="#experience">Read résumé</a>
+                        <a class="button button--outline" href="#contact">Get in touch</a>
                     </div>
-                    <ul class="contact-inline">
-                        <li><a href="tel:+19053413462">+1 (905) 341-3462</a></li>
-                        <li><a href="mailto:helalianna@gmail.com">helalianna@gmail.com</a></li>
-                    </ul>
                 </div>
-
-                <!-- Headshot placeholder -->
-                <div class="hero__right">
-                    <figure class="headshot headshot--frame">
-                        <!-- Replace the placeholder with your professional photo -->
-                        <img src="profile.png" alt="Jhoanna Zamora wearing her graduation gown and holding flowers" />
-                        <figcaption>Hi! I’m Jhoanna — I love great service and great food.</figcaption>
+                <div class="portrait-stage">
+                    <figure class="portrait">
+                        <img src="assets/images/profile.png" width="362" height="632" alt="Jhoanna Zamora in her graduation gown holding a bouquet of flowers" fetchpriority="high">
+                        <figcaption>Jhoanna Zamora</figcaption>
                     </figure>
                 </div>
             </div>
-            <div class="scroll-indicator" aria-hidden="true">Scroll</div>
-            <div class="curve-divider" aria-hidden="true">
-                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                    <path d="M0,96 C240,32 480,160 720,100 C960,40 1200,80 1440,32 L1440,120 L0,120 Z"></path>
-                </svg>
-            </div>
         </section>
 
-        <!-- Summary -->
-        <section id="summary" class="section container">
-            <div class="section__header">
-                <h2>Summary</h2>
-            </div>
-            <p>
-                As a dynamic professional with over four years’ experience spanning customer service, bakery production
-                and administrative operations, I thrive on delivering warm hospitality, pretty plating and polished
-                processes. Currently serving as an Executive Administrative Assistant at Field of Greens, I leverage my
-                strengths in inventory and order management, supplier relations, and process improvement to support both
-                front‑of‑house and back‑of‑house teams. Fluent in English and Tagalog, I am always eager to contribute
-                my skills to guest‑focused organizations seeking efficiency and excellence.
-            </p>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section container">
-            <div class="section__header">
-                <h2>About</h2>
-                <p>People-first hospitality with a detail-oriented approach to bakery production and admin operations.
-                </p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>What I do</h3>
-                    <p>
-                        I coordinate front-of-house service, support bakery production during peaks, and keep records,
-                        orders,
-                        and inventory tidy so teams can focus on guests and products.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <h3>How I work</h3>
-                    <p>
-                        Clear communication, efficient prep, and quality checks. I love building repeatable systems that
-                        make
-                        busy days feel smooth.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <h3>Languages</h3>
-                    <p>English, Tagalog</p>
+        <section id="about" class="section about" tabindex="-1" aria-labelledby="about-title">
+            <div class="container about-layout">
+                <h2 id="about-title">About me</h2>
+                <div id="summary" class="about-copy" tabindex="-1">
+                    <p class="summary-copy">As Assistant Manager at Chuck E. Cheese, I oversee staff performance, cash handling, inventory, and birthday party coordination. I draw on my bakery and administrative experience to keep service running smoothly and records accurate.</p>
+                    <p class="language-note"><strong>Languages</strong> English and Tagalog</p>
                 </div>
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section section--alt">
-            <div class="container">
-                <div class="section__header">
-                    <h2>Experience</h2>
-                    <p>Recent roles and selected achievements.</p>
+        <section id="experience" class="section experience" tabindex="-1" aria-labelledby="experience-title">
+            <div class="container experience-layout">
+                <div class="section-intro">
+                    <h2 id="experience-title">Experience</h2>
+                    <p>Team leadership, bakery production, and guest service.</p>
+                    <a class="button button--outline" href="Resume.pdf" target="_blank" rel="noopener">View résumé <span class="file-type">PDF</span></a>
                 </div>
 
                 <div class="timeline">
-                    <article class="card">
-                        <header class="card__header">
-                            <h3>Executive Administrative Assistant</h3>
-                            <div class="meta">
-                                <span class="org">Field of Greens</span>
-                                <span class="date">May 2025 – Present</span>
+                    <article class="role role--current">
+                        <header class="role-header">
+                            <div>
+                                <p class="role-employer">Chuck E. Cheese</p>
+                                <h3>Assistant Manager</h3>
                             </div>
+                            <p class="role-date"><time datetime="2025-12">December 2025</time> – Present</p>
                         </header>
-                        <ul class="card__list">
-                            <li>Managed daily admin ops: orders, invoices, and inventory records.</li>
-                            <li>Coordinated suppliers for pricing and on-time deliveries.</li>
-                            <li>Processed financial records accurately and on schedule.</li>
-                            <li>Implemented quality checks for precise data entry.</li>
-                            <li>Scheduled meetings, prepared reports, and supported management.</li>
-                            <li>Streamlined filing/docs to improve efficiency.</li>
+                        <ul class="role-duties">
+                            <li>Supervise and support team members to keep daily operations efficient and service consistent.</li>
+                            <li>Train new hires on shift preparation, service procedures, and how to carry out their daily responsibilities.</li>
+                            <li>Oversee cash handling, including counting, reconciliation, and secure transaction processing.</li>
+                            <li>Prepare an Area of Interest (AOI) report for the District Manager on birthday party sales performance.</li>
+                            <li>Resolve guest concerns promptly and professionally.</li>
+                            <li>Oversee servers and birthday party operations so events run smoothly and meet company standards and guest expectations.</li>
                         </ul>
                     </article>
 
-                    <article class="card">
-                        <header class="card__header">
-                            <h3>Baker’s Assistant</h3>
-                            <div class="meta">
-                                <span class="org">Field of Greens</span>
-                                <span class="date">Apr 2024 – Sep 2024</span>
+                    <article class="role">
+                        <header class="role-header">
+                            <div>
+                                <p class="role-employer">Field of Greens</p>
+                                <h3>Executive Admin and Assistant Baker</h3>
                             </div>
+                            <p class="role-date"><time datetime="2024-04">April 2024</time> – <time datetime="2025-09">September 2025</time></p>
                         </header>
-                        <ul class="card__list">
-                            <li>Prepped butter tart filling, pastry goop, cookies, and focaccia dough per recipes.</li>
-                            <li>Packaged and labeled products to food safety standards.</li>
-                            <li>Measured and organized ingredients to keep bakers moving.</li>
-                            <li>Maintained sanitized workstations, tools, and equipment.</li>
-                            <li>Restocked ingredients and monitored inventory levels.</li>
+                        <ul class="role-duties">
+                            <li>Helped customers choose bakery products, answered questions, and resolved concerns promptly to encourage repeat visits.</li>
+                            <li>Operated the register and accurately processed multiple payment types.</li>
+                            <li>Helped prepare butter tart filling, pastry goop, cookies, and focaccia dough. Supported bakers with ingredient prep and packaging during peak hours.</li>
+                            <li>Rotated stock, removed expired items, and kept displays stocked and clean.</li>
+                            <li>Processed invoices, documented price changes accurately, and updated bakery pricing records on time.</li>
+                            <li>Worked with suppliers to secure competitive pricing, track stock needs, and keep deliveries on schedule.</li>
                         </ul>
                     </article>
 
-                    <article class="card">
-                        <header class="card__header">
-                            <h3>Bakery Sales Associate</h3>
-                            <div class="meta">
-                                <span class="org">Field of Greens</span>
-                                <span class="date">Apr 2024 – Sep 2024</span>
+                    <article class="role">
+                        <header class="role-header">
+                            <div>
+                                <p class="role-employer">Hard Rock Cafe</p>
+                                <h3>Retail Associate</h3>
                             </div>
+                            <p class="role-date"><time datetime="2023-12">December 2023</time> – <time datetime="2024-03">March 2024</time></p>
                         </header>
-                        <ul class="card__list">
-                            <li>Delivered personalized service and assisted with product selection.</li>
-                            <li>Operated POS with 100% transaction accuracy.</li>
-                            <li>Maintained stocked, clean, visually appealing displays.</li>
-                            <li>Supported production during peak hours.</li>
-                            <li>Ensured freshness through rotation and standards compliance.</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <header class="card__header">
-                            <h3>Customer Sales Associate &amp; Lead</h3>
-                            <div class="meta">
-                                <span class="org">J and C’s Candy (Family Business)</span>
-                                <span class="date">2019 – 2022</span>
-                            </div>
-                        </header>
-                        <ul class="card__list">
-                            <li>Built rapport with customers and provided tailored solutions.</li>
-                            <li>Assigned tasks, set priorities, and monitored daily workflow.</li>
-                            <li>Handled cash and reconciled registers accurately.</li>
-                            <li>Trained team members for consistent service quality.</li>
-                            <li>Scheduled and coordinated shifts based on demand.</li>
+                        <ul class="role-duties">
+                            <li>Helped guests choose merchandise, answered questions, and offered recommendations.</li>
+                            <li>Processed cash, credit, debit, and other payments accurately and efficiently.</li>
+                            <li>Organized merchandise, restocked displays, and kept products clean, correctly priced, and well presented.</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section container">
-            <div class="section__header">
-                <h2>Key Competencies</h2>
-                <p>Strengths I bring to every team.</p>
-            </div>
-            <ul class="chips">
-                <li>Customer Service Excellence</li>
-                <li>Inventory &amp; Order Management</li>
-                <li>Supplier &amp; Vendor Relations</li>
-                <li>Staff Training &amp; Mentorship</li>
-                <li>Adaptability &amp; Problem Solving</li>
-                <li>Process Improvement &amp; Efficiency</li>
-            </ul>
-        </section>
+        <div class="container section qualifications">
+            <section id="skills" class="skills-panel" tabindex="-1" aria-labelledby="skills-title">
+                <h2 id="skills-title">Key competencies</h2>
+                <ul class="skills-list">
+                    <li>Customer Service Excellence</li>
+                    <li>Inventory and Order Management</li>
+                    <li>Supplier and Vendor Relations</li>
+                    <li>Staff Training and Mentorship</li>
+                    <li>Adaptability and Problem Solving</li>
+                    <li>Process Improvement and Efficiency</li>
+                </ul>
+            </section>
 
-        <!-- Education -->
-        <section id="education" class="section section--alt">
+            <div class="credentials">
+                <section id="education" tabindex="-1" aria-labelledby="education-title">
+                    <h2 id="education-title">Education</h2>
+                    <div class="education-record">
+                        <h3>Niagara College on the Lake</h3>
+                        <p class="education-program">Tourism Management – Business Development</p>
+                        <p class="education-date"><time datetime="2023-09">September 2023</time> – <time datetime="2025-04">April 2025</time></p>
+                        <ul class="course-list">
+                            <li>Hospitality and Tourism Marketing</li>
+                            <li>Hospitality Supervision and Event Management</li>
+                            <li>Culinary and Beverage Tourism</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="certs" class="certificates" tabindex="-1" aria-labelledby="certs-title">
+                    <h2 id="certs-title">Certificates</h2>
+                    <ul class="certificate-list">
+                        <li>Smart Serve Certification</li>
+                        <li>Food Handler’s Certification</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section id="gallery" class="section gallery" tabindex="-1" aria-labelledby="gallery-title">
             <div class="container">
-                <div class="section__header">
-                    <h2>Education</h2>
+                <div class="gallery-heading">
+                    <h2 id="gallery-title">Food gallery</h2>
+                    <p>Select a photo to enlarge it.</p>
                 </div>
-                <div class="edu">
-                    <div class="edu__item">
-                        <h3>Niagara College — Diploma in Tourism Management (Co-op)</h3>
-                        <p class="meta">Sep 2023 – Apr 2025</p>
-                        <ul class="edu__list">
-                            <li>Hospitality &amp; Tourism Marketing</li>
-                            <li>Culinary &amp; Beverage Tourism</li>
-                            <li>Event Management</li>
-                            <li>Hospitality Supervision</li>
-                        </ul>
-                    </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-card gallery-card--featured">
+                        <a href="assets/images/gallery/strawberry-crepe.jpg" class="gallery-link" aria-labelledby="crepe-caption">
+                            <img src="assets/images/gallery/thumbs/strawberry-crepe.webp" width="615" height="820" alt="Crepe topped with sliced strawberries and a scoop of ice cream" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="crepe-caption">Strawberry crepe</figcaption>
+                    </figure>
+                    <figure class="gallery-card gallery-card--featured">
+                        <a href="assets/images/gallery/rosemary-focaccia.jpg" class="gallery-link" aria-labelledby="bread-caption">
+                            <img src="assets/images/gallery/thumbs/rosemary-focaccia.webp" width="655" height="820" alt="Golden rosemary focaccia in a baking pan held outdoors" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="bread-caption">Rosemary focaccia</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/strawberry-pastry.webp" class="gallery-link" aria-labelledby="strawberry-caption">
+                            <img src="assets/images/gallery/thumbs/strawberry-pastry.webp" width="682" height="800"
+                                alt="Strawberry-glazed cinnamon roll topped with strawberries on a white plate outdoors" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="strawberry-caption">Strawberry-glazed cinnamon roll</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/iced-cinnamon-roll.webp" class="gallery-link" aria-labelledby="cinnamon-caption">
+                            <img src="assets/images/gallery/thumbs/iced-cinnamon-roll.webp" width="600" height="800"
+                                alt="A cinnamon roll with white icing on a plate against a wooden tabletop" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="cinnamon-caption">Iced cinnamon roll</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/banana-bread.jpg" class="gallery-link" aria-labelledby="banana-caption">
+                            <img src="assets/images/gallery/thumbs/banana-bread.webp" width="615" height="820" alt="Banana bread topped with chopped nuts in a parchment-lined pan" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="banana-caption">Banana bread</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/mango-sticky-rice.jpg" class="gallery-link" aria-labelledby="mango-caption">
+                            <img src="assets/images/gallery/thumbs/mango-sticky-rice.webp" width="615" height="820" alt="Sticky rice with mango slices arranged into roses beside a bouquet" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="mango-caption">Mango sticky rice</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/steak-and-salmon-sashimi.jpg" class="gallery-link" aria-labelledby="steak-caption">
+                            <img src="assets/images/gallery/thumbs/steak-and-salmon-sashimi.webp" width="615" height="820" alt="Sliced seared steak with garlic alongside salmon sashimi and dipping sauce" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="steak-caption">Steak and salmon sashimi</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/avocado-toast.jpg" class="gallery-link" aria-labelledby="toast-caption">
+                            <img src="assets/images/gallery/thumbs/avocado-toast.webp" width="615" height="820" alt="Avocado toast topped with salmon, diced vegetables, and a drizzle of crema" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="toast-caption">Loaded avocado toast</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/smores-cookies.jpeg" class="gallery-link" aria-labelledby="smores-caption">
+                            <img src="assets/images/gallery/thumbs/smores-cookies.webp" width="615" height="820" alt="Four cookies with toasted marshmallow centers on a white plate" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="smores-caption">S’mores cookies</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <a href="assets/images/gallery/assorted-cookies.jpeg" class="gallery-link" aria-labelledby="cookies-caption">
+                            <img src="assets/images/gallery/thumbs/assorted-cookies.webp" width="615" height="820" alt="Three rows of assorted light and dark cookies on a rectangular platter" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption id="cookies-caption">Assorted cookies</figcaption>
+                    </figure>
                 </div>
             </div>
+
+            <dialog class="lightbox" id="lightbox" aria-label="Food photo preview">
+                <div class="lightbox-content">
+                    <button type="button" class="lightbox-close" aria-label="Close preview" autofocus>×</button>
+                    <figure class="lightbox-photo">
+                        <div class="lightbox-images"></div>
+                        <figcaption aria-live="polite"></figcaption>
+                    </figure>
+                    <div class="lightbox-controls">
+                        <button type="button" class="button button--small" data-direction="-1">Previous</button>
+                        <span class="lightbox-count"></span>
+                        <button type="button" class="button button--small" data-direction="1">Next</button>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
-        <!-- Certificates -->
-        <section id="certs" class="section container">
-            <div class="section__header">
-                <h2>Certificates</h2>
-            </div>
-            <ul class="chips">
-                <li>Smart Serve Certificate</li>
-                <li>Food Safe Certificate</li>
-            </ul>
-        </section>
-
-        <!-- Gallery -->
-        <section id="gallery" class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h2>Food Gallery</h2>
+        <section id="contact" class="section contact" tabindex="-1" aria-labelledby="contact-title">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <h2 id="contact-title">Get in touch</h2>
+                    <p>I’m open to opportunities in hospitality, bakery production, and operations.</p>
+                    <address>
+                        <a href="mailto:annazmra@gmail.com">annazmra@gmail.com</a>
+                        <a href="tel:+19053413462">+1 (905) 341-3462</a>
+                    </address>
                 </div>
 
-                <!-- Replace these placeholders with your own images -->
-                <div class="gallery-grid" data-lightbox>
-                    <a href="banana_bread.jpg" class="gallery-item">
-                        <img src="banana_bread.jpg"
-                            alt="Freshly baked banana bread topped with chopped nuts in a parchment-lined pan" loading="lazy">
-                    </a>
-                    <a href="bread.jpg" class="gallery-item">
-                        <img src="bread.jpg"
-                            alt="Golden rosemary focaccia bread fresh out of the oven" loading="lazy">
-                    </a>
-                    <a href="crepe.jpg" class="gallery-item">
-                        <img src="crepe.jpg"
-                            alt="Strawberry crepe garnished with fresh berries and a scoop of vanilla ice cream" loading="lazy">
-                    </a>
-                    <a href="mango_stick_rice.jpg" class="gallery-item">
-                        <img src="mango_stick_rice.jpg"
-                            alt="Mango sticky rice dessert with sesame seeds and elegantly sliced mango" loading="lazy">
-                    </a>
-                    <a href="steak.jpg" class="gallery-item">
-                        <img src="steak.jpg"
-                            alt="Seared steak with garlic alongside salmon sashimi and dipping sauce" loading="lazy">
-                    </a>
-                    <a href="toast.jpg" class="gallery-item">
-                        <img src="toast.jpg"
-                            alt="Avocado toast topped with smoked salmon, diced vegetables and a drizzle of crema" loading="lazy">
-                    </a>
-                    <a href="smores_cookies.jpeg" class="gallery-item">
-                        <img src="smores_cookies.jpeg"
-                            alt="Smores cookie" loading="lazy">
-                    </a>
-                    <a href="variety_cookies.jpeg" class="gallery-item">
-                        <img src="variety_cookies.jpeg"
-                            alt="Variety of cookies" loading="lazy">
-                    </a>
-                </div>
-            </div>
-
-            <!-- Lightbox modal -->
-            <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
-                <button class="lightbox__close" aria-label="Close preview">&times;</button>
-                <img class="lightbox__img" alt="">
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="section section--accent">
-            <div class="container">
-                <div class="section__header">
-                    <h2>Contact</h2>
-                    <p>I’m open to roles in customer service, bakery production, and administrative operations.</p>
-                </div>
-
-                <div class="contact-cards">
-                    <a class="contact-card" href="tel:+19053413462">
-                        <span class="icon" aria-hidden="true">📞</span>
-                        <span>+1 (905) 341-3462</span>
-                    </a>
-                    <a class="contact-card" href="mailto:helalianna@gmail.com">
-                        <span class="icon" aria-hidden="true">✉️</span>
-                        <span>helalianna@gmail.com</span>
-                    </a>
-                </div>
-
-                <!-- Simple contact form using mailto: for convenience -->
-                <form class="contact-form" action="mailto:helalianna@gmail.com?subject=Portfolio%20Inquiry" method="post" enctype="text/plain">
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="Name" required aria-required="true">
+                <form class="contact-form" action="mailto:annazmra@gmail.com?subject=Portfolio%20Inquiry" method="post" enctype="text/plain">
+                    <div class="form-fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" autocomplete="email" required>
+                        </div>
+                        <div class="field field--full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" rows="4" required></textarea>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="Email" required aria-required="true">
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="Message" rows="4" required aria-required="true"></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="btn">Send Message</button>
-                        <button type="reset" class="btn btn--ghost">Reset</button>
+                    <div class="button-row form-actions">
+                        <button type="submit" class="button">Open email draft</button>
+                        <button type="reset" class="button button--outline">Reset</button>
                     </div>
                 </form>
             </div>
@@ -356,13 +300,13 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <p>© <span id="year"></span> Jhoanna Zamora</p>
-            <a class="btn btn--small" href="Resume.pdf" target="_blank">View Resume</a>
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Jhoanna Zamora</p>
+            <div class="button-row">
+                <a class="button button--small" href="#experience">Read résumé</a>
+                <a class="button button--outline button--small" href="Resume.pdf" target="_blank" rel="noopener">View résumé <span class="file-type">PDF</span></a>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js" defer></script>
 </body>
-
 </html>
